@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+body{
+    background-image: url(images/bg-header-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+/* basic css */
+h1, h2, h2,.faqs{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+article h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+p{
+    color: hsl(201, 11%, 66%);
+}
+
+/* baic buttons css */
+.ios{
+    background-color: hsl(171, 67%, 41%);
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid hsl(171, 68%, 35%);
+    border-top: none;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.ios:hover{
+    background-color: hsl(171, 68%, 55%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid hsl(233, 55%, 55%);
+    border-top: none;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.mac:hover{
+    background-color: hsl(233, 100%, 75%);
+}
+/* section 1 */
+.first-Section{
+    margin: 100px 50px;
+}
+.mainLogo img{
+    max-width: 50%;
+}
+h1{
+    margin-top: 50px;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+/* section 2 */
+.second-Section{
+    margin: 100px 50px;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.computer img{
+    width: 60%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.Eachsnippet{
+    margin-bottom: 30px;
+    color:hsl(201, 11%, 66%) ;
+}
+.Eachsnippet h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/* section 3 */
+.third-Section{
+    margin: 100px 50px;
+}
+.devices img{
+    width: 70%;
+    margin-top: 50px;
+}
+/* section 4 */
+.fourth-Section{
+    margin: 100px 50px;
+}
+.tools article{
+    margin-bottom: 30px;
+}
+.tools{
+    margin-top: 30px;
+} 
+.tools article img{
+    margin-top: 30px;
+}
+.tools article h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/* section 5 */
+.fifth-Section{
+    margin: 100px 50px; 
+}
+.companies{
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+}
+.companies img{
+    width: 80%;
+}
+/*  */
+.sixth-Section{
+    margin: 100px 50px;
+}
+.seventh-Section{
+    background-color:hsl(0, 2%, 90%) ;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    color: hsl(201, 11%, 66%);
+    
+}
+.footerLogo img{
+    margin-top: 100px;
+    max-width: 10%;
+}
+.faqs{
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+}
+.faqs div:hover{
+    color: hsl(171, 67%, 41%);
+}
+.social-Media{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.sm:hover{
+    background-color: hsl(171, 67%, 41%);
+}
+
+@media screen and (min-width:960px){
+    body{
+        background-image: url(images/bg-header-desktop.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    /* baic buttons css */
+    .ios{
+        width: 20%;
+        margin-right: 20px;
+    }
+    .mac{
+        width: 20%;
+    }
+    .first-Section p{
+        margin: 0 300px;
+    }
+        /* section 2 */
+    .second-Section{
+        margin: 100px 50px;
+    }
+    .second-Section p{
+        margin: 0 300px 50px;
+    }
+    .columnSection{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        column-gap: 50px;
+    }
+    .computer img{
+        width: 110%;
+        transform: translate(-15%);
+    }
+    .snippets{
+       padding: 80px 100px 40px 0px; 
+       align-items: center;
+       display: grid;
+    }
+    .Eachsnippet {
+        text-align: left;
+        color:hsl(201, 11%, 66%) ;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+    .snippets article{
+        margin-bottom: 0px;
+    }
+    .Eachsnippet p{
+        margin-top: 20px;
+    }
+    .third-Section p{
+        margin: 0 300px;
+    }
+    .devices img{
+        width: 60%;
+        margin-top: 50px;
+    }
+    .fourth-Section{
+        margin: 100px 200px;
+    }
+    .tools{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:30px;
+    } 
+    .fifth-Section{
+        margin: 100px 150px;
+    }
+    .companies{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 50px;
+    }
+    .sixth-Section p{
+        margin: 0 300px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: hsl(201, 11%, 66%);
+        gap: 30px ;
+        justify-content: center;
+        align-items: center;   
+    }
+    .footerLogo img{
+        margin-top: 30px;
+        max-width: 15%;
+    }
+    .faqs{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 50px;
+        row-gap: 20px;
+        padding: 0px;
+        margin:40px 0 40px;
+        text-align: left;
+    }
+    .social-Media{
+        padding: 30px;
+        max-width: 30%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 20px 20px 20px 180px;
+    }
+}
